@@ -21,4 +21,3 @@ jobs:
 
       - name: Upload website to S3
         run: aws s3 sync website/ s3://${{ secrets.AWS_BUCKET }} --delete
-
